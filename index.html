@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNexus Solutions | Desarrollo de Software</title>
+    <!-- CSS Propio -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <!-- 1. NAVBAR -->
+    <nav class="navbar">
+        <div class="logo"><i class="bi bi-cpu-fill"></i> TechNexus</div>
+        <ul class="nav-links">
+            <li><a href="#hero">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#tecnologias">Tecnologías</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#cotizador">Cotizador</a></li>
+            <li><a href="#contacto" class="btn-nav">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- 2. HERO -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Transformamos tus Ideas en <span class="highlight">Software de Alto Nivel</span></h1>
+            <p class="hero-subtitle">Desarrollamos aplicaciones web, móviles y soluciones en la nube a la medida de tu empresa.</p>
+            <div class="hero-buttons">
+                <a href="#cotizador" class="btn-primary">Calcular Presupuesto</a>
+                <a href="#proyectos" class="btn-secondary">Ver Proyectos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. SERVICIOS -->
+    <section id="servicios" class="section">
+        <h2 class="section-title">Nuestros Servicios</h2>
+        <div class="cards-grid">
+            <div class="card service-card">
+                <i class="bi bi-code-slash card-icon"></i>
+                <h3>Desarrollo Web</h3>
+                <p>Sitios y plataformas web escalables, rápidas y optimizadas para motores de búsqueda.</p>
+            </div>
+            <div class="card service-card">
+                <i class="bi bi-phone card-icon"></i>
+                <h3>Apps Móviles</h3>
+                <p>Aplicaciones nativas e híbridas para iOS y Android con experiencias de usuario intuitivas.</p>
+            </div>
+            <div class="card service-card">
+                <i class="bi bi-cloud-check card-icon"></i>
+                <h3>Soluciones Cloud</h3>
+                <p>Arquitecturas en la nube seguras, eficientes y preparadas para alta concurrencia.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. TECNOLOGÍAS UTILIZADAS -->
+    <section id="tecnologias" class="section tech-section">
+        <h2 class="section-title">Tecnologías que Dominamos</h2>
+        <div class="tech-grid">
+            <div class="tech-item"><i class="bi bi-filetype-js"></i><span>JavaScript</span></div>
+            <div class="tech-item"><i class="bi bi-filetype-html"></i><span>HTML5 / CSS3</span></div>
+            <div class="tech-item"><i class="bi bi-filetype-py"></i><span>Python</span></div>
+            <div class="tech-item"><i class="bi bi-database"></i><span>PostgreSQL</span></div>
+            <div class="tech-item"><i class="bi bi-git"></i><span>Git & GitHub</span></div>
+            <div class="tech-item"><i class="bi bi-bootstrap"></i><span>Bootstrap</span></div>
+        </div>
+    </section>
+
+    <!-- 5. ESTADÍSTICAS -->
+    <section id="estadisticas" class="section stats-section">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <h3 class="stat-number">+150</h3>
+                <p>Proyectos Entregados</p>
+            </div>
+            <div class="stat-item">
+                <h3 class="stat-number">99%</h3>
+                <p>Clientes Satisfechos</p>
+            </div>
+            <div class="stat-item">
+                <h3 class="stat-number">24/7</h3>
+                <p>Soporte Técnico</p>
+            </div>
+            <div class="stat-item">
+                <h3 class="stat-number">+5</h3>
+                <p>Años de Experiencia</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. PROYECTOS -->
+    <section id="proyectos" class="section">
+        <h2 class="section-title">Proyectos Recientes</h2>
+        <div class="cards-grid">
+            <div class="card project-card">
+                <i class="bi bi-cart-check card-icon"></i>
+                <h3>E-Commerce Enterprise</h3>
+                <p>Plataforma de comercio electrónico con pasarela de pagos integrados y gestión de inventario.</p>
+            </div>
+            <div class="card project-card">
+                <i class="bi bi-hospital card-icon"></i>
+                <h3>Sistema de Gestión Médica</h3>
+                <p>Software para expedientes clínicos interactivos y control de citas en tiempo real.</p>
+            </div>
+            <div class="card project-card">
+                <i class="bi bi-controller card-icon"></i>
+                <h3>Game Library API</h3>
+                <p>Backend de alto rendimiento desarrollado con FastAPI y base de datos en PostgreSQL.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALCULADORA DE PRESUPUESTO (Interactiva con JavaScript) -->
+    <section id="cotizador" class="section calc-section">
+        <h2 class="section-title">Calculadora de Presupuesto Web</h2>
+        <div class="calc-container">
+            <div class="calc-group">
+                <label for="paginas">Cantidad de Páginas:</label>
+                <input type="number" id="paginas" value="5" min="1" max="50">
+            </div>
+            <div class="calc-group">
+                <label for="precio">Precio por Página ($):</label>
+                <input type="number" id="precio" value="800" min="100" step="50">
+            </div>
+            <div class="calc-result">
+                <h3>Costo Estimado: <span id="costo-estimado">$4,000</span></h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. FORMULARIO DE CONTACTO -->
+    <section id="contacto" class="section">
+        <h2 class="section-title">Contáctanos</h2>
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('¡Mensaje enviado con éxito!');">
+            <input type="text" placeholder="Nombre Completo" required>
+            <input type="email" placeholder="Correo Electrónico" required>
+            <textarea rows="4" placeholder="Cuéntanos sobre tu proyecto" required></textarea>
+            <button type="submit" class="btn-primary">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <!-- 8. FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2026 TechNexus Solutions. Todos los derechos reservados.</p>
+        <div class="social-links">
+            <a href="#"><i class="bi bi-github"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+        </div>
+    </footer>
+
+    <!-- GSAP y ScrollTrigger CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!-- JS Propio -->
+    <script src="script.js"></script>
+</body>
+</html>
